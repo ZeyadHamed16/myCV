@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  cursor: context-menu;
+}
+/* test terminal */
+/* ------------------------------------------------------------------------------------ */
+/* ----------------------------------- allahu akbar ----------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+.allah h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* --------------------------------- background image --------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+.back__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(../Media/Photo/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* ----------------------------------- CV container ----------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+.cv__container {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border: 1px solid black;
+  border-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ---------------------------------- top information ---------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+/* container */
+.top__info {
+  margin-bottom: 20px;
+}
+
+/* self image */
+.top__info .photo img {
+  width: 170px;
+
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.text {
+  color: #fff;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.top__info .name {
+  font-size: 20px;
+}
+
+.top__info .track {
+  letter-spacing: 3px;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* --------------------------------- middle information --------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+/* container */
+.middle__info {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.middle__info .site {
+  margin-bottom: 10px;
+}
+
+.middle__info .site a {
+  text-decoration: none;
+}
+
+/* --------- */
+
+.button {
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795e;
+  background-color: #209978;
+  overflow: hidden;
+
+  width: 100%;
+  justify-content: center;
+
+  border-radius: 7px;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(180px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button .button__icon i {
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #17795e;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #146c54;
+}
+
+.button:active {
+  border: 1px solid #146c54;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* --------------------------------- bottom information --------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+.button-icon {
+  display: flex;
+  border: 3px #fff solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+
+.icon {
+  background-color: #fff;
+}
+
+.icon i {
+  padding: 23px;
+  cursor: pointer;
+}
+
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.button-icon:hover {
+  border-color: #ff98a2;
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 47px;
+  width: 200px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top {
+  background: #ff98a2;
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+.front {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+  .cv__container {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .middle__info {
+    width: 100%;
+  }
+
+  .button {
+    border-radius: 0;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .button .button__text {
+    font-size: 20px;
+  }
+
+  .button .button__icon {
+    transform: translateX(135px);
+    border-radius: 5px;
+  }
+}
