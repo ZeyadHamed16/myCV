@@ -295,34 +295,3 @@
     border-radius: 5px;
   }
 }
-
-
-@media (max-height: 500px) {
-  .cv__container {
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    padding: 25px 0;
-    margin: 0;
-  }
-
-  .middle__info {
-    width: 100%;
-  }
-
-  .button {
-    border-radius: 0;
-    height: 45px;
-    margin-bottom: 15px;
-  }
-
-  .button .button__text {
-    font-size: 20px;
-  }
-
-  .button .button__icon {
-    transform: translateX(270px);
-    border-radius: 5px;
-  }
-
-}
