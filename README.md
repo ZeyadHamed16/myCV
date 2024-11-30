@@ -1,6 +1,6 @@
 # Zeyad Hamed - CV
 
-L I N K ---> https://zeyadhamed16.github.io/myCV
+**L I N K** ---> [https://zeyadhamed16.github.io/myCV](https://zeyadhamed16.github.io/Zeyad-Hamed-CV/)
 
 ---
 
